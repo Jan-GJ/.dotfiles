@@ -33,7 +33,6 @@
     "**/.factorypath": true
   },
   "react-native-tools.showUserTips": false,
-  "C_Cpp.default.includePath": ["/Users/jangrossejuttermann/OneDrive/Desktop/School shared/MikrokontrollerTechnik/include/"],
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "editor.inlineSuggest.enabled": true,
@@ -73,6 +72,5 @@
   "vscode-pets.position": "explorer",
   "vscode-pets.theme": "forest",
   "window.zoomLevel": 1,
-  "editor.cursorSurroundingLines": 10,
-  "php.validate.executablePath": "C:/php-8.1.11-Win32-vs16-x64/php.exe"
+  "editor.cursorSurroundingLines": 10
 }
