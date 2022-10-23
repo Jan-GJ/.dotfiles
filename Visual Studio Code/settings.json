@@ -1,0 +1,78 @@
+{
+  "workbench.startupEditor": "none",
+  "terminal.integrated.fontFamily": "monospace",
+  "todo-tree.tree.showScanModeButton": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.editorAssociations": {
+    "*.jpg": "luna.editor",
+    "*.ico": "luna.editor",
+    "*.png": "luna.editor"
+  },
+  "settingsSync.ignoredSettings": ["terminal.integrated.fontFamily"],
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 180,
+  "debug.javascript.autoAttachFilter": "disabled",
+  "sqltools.connections": [],
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "react-native-tools.showUserTips": false,
+  "C_Cpp.default.includePath": ["/Users/jangrossejuttermann/OneDrive/Desktop/School shared/MikrokontrollerTechnik/include/"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "editor.inlineSuggest.enabled": true,
+  "json.schemas": [],
+  "glassit.alpha": 255,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "remote.SSH.remotePlatform": {
+    "gmfs.io": "linux"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "typescriptreact": true
+  },
+  "workbench.layoutControl.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "java.codeGeneration.generateComments": true,
+  "testMyCode.hideMetaFiles": false,
+  "testMyCode.updateExercisesAutomatically": true,
+  "testMyCode.insiderVersion": false,
+  "testMyCode.logLevel": "verbose",
+  "testMyCode.downloadOldSubmission": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "editor.stickyScroll.enabled": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "vscode-pets.petColor": "black",
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.position": "explorer",
+  "vscode-pets.theme": "forest",
+  "window.zoomLevel": 1,
+  "editor.cursorSurroundingLines": 10,
+  "php.validate.executablePath": "C:/php-8.1.11-Win32-vs16-x64/php.exe"
+}
