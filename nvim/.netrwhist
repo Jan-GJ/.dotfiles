@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/jan/git'
+let g:netrw_dirhist_0='/home/jan/.config/nvim'
+let g:netrw_dirhist_9='/home/jan/.config'
+let g:netrw_dirhist_8='/home/jan'
+let g:netrw_dirhist_7='/home/jan/git'
+let g:netrw_dirhist_6='/home/jan'
+let g:netrw_dirhist_5='/home/jan/.config/nvim'
+let g:netrw_dirhist_4='/home/jan/.config'
+let g:netrw_dirhist_3='/home/jan'
+let g:netrw_dirhist_2='/home/jan/.local'
