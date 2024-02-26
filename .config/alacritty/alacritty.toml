@@ -1,0 +1,9 @@
+[window]
+decorations = "none"
+opacity = 0.95
+title = "Terminal"
+dynamic_title = false
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "FiraCode Nerd Font", style = "Retina" }
