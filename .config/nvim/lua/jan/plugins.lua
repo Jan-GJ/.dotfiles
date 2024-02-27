@@ -12,7 +12,6 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-	
 	use 'wbthomason/packer.nvim' --Packer default
 	use 'ellisonleao/gruvbox.nvim' --Gruvbox theme
 	use {
@@ -33,7 +32,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	} --Telescope (Fuzzy file finder)
 	use 'christoomey/vim-tmux-navigator' --Vim-tmux-navigator (vim keybinds with tmux) 
-
+	use 'norcalli/nvim-colorizer.lua' --Vim-colorizer-lua (colors #ff5532 accordingly)
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
