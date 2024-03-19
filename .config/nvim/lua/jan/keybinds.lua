@@ -16,11 +16,11 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 --Source current file
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 end)
 
 --Compile and run current .c file
-vim.keymap.set("n", "<leader>rc", function()	
+vim.keymap.set("n", "<leader>rc", function()
 	vim.cmd([[!gcc % -o %< && echo -e "\n" && %<]])
 end)
 
@@ -28,3 +28,10 @@ end)
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 
+--clear search highlights
+vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
+
+--open trouble list
+vim.keymap.set("n", "<leader>ot", "<cmd>TroubleToggle<cr>",
+	{ silent = true, noremap = true }
+)

@@ -18,3 +18,9 @@ vim.opt.updatetime = 50
 
 --Enable truecolor
 vim.opt.termguicolors = true
+
+-- use system clipboard as default register
+vim.opt.clipboard:append("unnamedplus")
+
+--Max columncount
+vim.opt.colorcolumn = "80"

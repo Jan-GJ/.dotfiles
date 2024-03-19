@@ -17,22 +17,6 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Aliases
-alias spotify="spotify_player"
-
-alias vi="nvim"
-alias vim="nvim"
-
-alias top="btop"
-alias htop="btop"
-
-alias lsa="ls -a"
-
-alias nvimcfg="nvim ~/.config/nvim"
-alias tmuxcfg="nvim ~/.config/tmux/tmux.conf"
-alias zshcfg="nvim ~/.zshrc"
-
-alias src="source ~/.zshrc && tmux source ~/.config/tmux/tmux.conf"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -123,6 +107,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Aliases
+alias spotify="spotify_player"
+
+alias vi="nvim"
+alias vim="nvim"
+
+alias top="btop"
+alias htop="btop"
+
+
+alias nvimcfg="nvim ~/.config/nvim"
+alias tmuxcfg="nvim ~/.config/tmux/tmux.conf"
+alias zshcfg="nvim ~/.zshrc"
+
+alias src="source ~/.zshrc && tmux source ~/.config/tmux/tmux.conf"
+alias ls="exa -l --header --icons --git"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
