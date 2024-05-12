@@ -1,19 +1,20 @@
-#Clone the repository, or download the theme of your choice:
+V#Clone the repository, or download the theme of your choice:
 # We use Alacritty's default Linux config directory as our storage location here.
 #mkdir -p ~/.config/alacritty/themes
 #git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 import = [
-	"~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+    "~/.config/alacritty/themes/themes/github_dark_tritanopia.toml"
 ]
+
+[shell]
+program = "/bin/zsh"
 
 [window]
 decorations = "none"
-opacity = 0.80
 title = "Terminal"
-blur = true
 dynamic_title = false
 decorations_theme_variant = "Dark"
 
 [font]
-normal = { family = "FiraCode Nerd Font", style = "Retina" }
-
+normal = { family = "Big Blue Term 437 Nerd Font", style="Bold" }
+size = 13.0
