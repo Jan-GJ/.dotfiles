@@ -1,12 +1,12 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	config = function()
-		local catppuccin = require('lualine.themes.catppuccin')
-		catppuccin.normal.c.bg = 'None'
+		local github_dark_tritanopia = require('lualine.themes.github_dark_tritanopia')
+		github_dark_tritanopia.normal.c.bg = 'None'
 		require('lualine').setup {
 			options = {
 				icons_enabled = false,
-				theme = catppuccin,
+				theme = github_dark_tritanopia,
 				component_separators = '|',
 				section_separators = '',
 			},
