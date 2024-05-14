@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/themes/themes/tokyonight_night.toml"
+    "~/.config/alacritty/tokyonight_night.toml"
 ]
 
 [shell]
@@ -10,6 +10,8 @@ decorations = "none"
 title = "Terminal"
 dynamic_title = false
 decorations_theme_variant = "Dark"
+
+# JetBrainsMono font download: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
 
 [font]
 size = 16.0
