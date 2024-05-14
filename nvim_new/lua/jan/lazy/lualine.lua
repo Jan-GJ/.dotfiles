@@ -1,12 +1,12 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	config = function()
-		local github_dark_tritanopia = require('lualine.themes.github_dark_tritanopia')
-		github_dark_tritanopia.normal.c.bg = 'None'
+		local tokyonight = require('lualine.themes.tokyonight')
+		tokyonight.normal.c.bg = 'None'
 		require('lualine').setup {
 			options = {
 				icons_enabled = false,
-				theme = github_dark_tritanopia,
+				theme = tokyonight,
 				component_separators = '|',
 				section_separators = '',
 			},
