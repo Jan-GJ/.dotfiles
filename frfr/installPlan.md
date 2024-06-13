@@ -18,6 +18,11 @@
     - Extensions
         - Unix Timestamp
         - Search HTTP Status Codes
+        - Arc
+        - Format JSON
+        - Vim Bro
+        - Speedtest
+        - Tailwind CSS
 - Rectangle
 - Alacritty
     - brew
