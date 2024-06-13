@@ -24,7 +24,7 @@
         - Speedtest
         - Tailwind CSS
 - Rectangle
-- Alacritty
+- WezTerm
     - brew
     - Zsh
     - Oh My Zsh
