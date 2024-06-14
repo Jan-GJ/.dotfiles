@@ -33,6 +33,7 @@
         - zsh-autosuggestions
     - tmux
     - btop
+    - eza
     - zoxide
     - clangd
     - go
