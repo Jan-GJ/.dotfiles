@@ -29,7 +29,6 @@
     - Zsh
     - Oh My Zsh
         - Oh My Posh
-        - zsh-syntax-highlighting
         - fast-syntax-highlighting
         - zsh-autosuggestions
     - tmux
