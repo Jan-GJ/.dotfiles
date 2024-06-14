@@ -32,6 +32,7 @@
         - fast-syntax-highlighting
         - zsh-autosuggestions
     - tmux
+    - btop
     - zoxide
     - clangd
     - go
