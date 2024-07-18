@@ -1,18 +1,19 @@
 # General
-- DataGrip
+- DataGrip || TablePlus
 - OneDrive
 - KeePassXC
 - Docker
 - Blender
-- [Bruno](https://www.usebruno.com/)
+- Proxyman
 
 # Windows
-- Arc
+- Google Chrome
 
 # Linux
 - Google Chrome
 
 # MacOS
+- [GetAPI](https://getapi.com/)
 - Arc
 - Raycast
     - Extensions
@@ -25,6 +26,7 @@
         - Tailwind CSS
 - Rectangle
 - WezTerm
+    - MesloLGS Nerd Font
     - brew
     - Zsh
     - Oh My Zsh
