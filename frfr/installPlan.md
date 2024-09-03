@@ -30,7 +30,7 @@
     - brew
     - Zsh
     - Oh My Zsh
-        - Oh My Posh
+        - Starship
         - fast-syntax-highlighting
         - zsh-autosuggestions
     - tmux
