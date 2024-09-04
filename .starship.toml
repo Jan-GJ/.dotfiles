@@ -1,0 +1,38 @@
+format = """
+$directory\
+$git_state\
+$git_branch\
+$git_status\
+$character\
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+[directory]
+style = "fg:#769ff0"
+format = "[$path]($style)"
+truncation_length = 3
+truncation_symbol = "~/"
+
+[character]
+success_symbol = "[|>](#9d7cd8)"
+error_symbol = "[|>](#ff757f)"
+
+[git_branch]
+style = "fg:#9d7cd8"
+format = '[ $branch ]($style)'
+
+[git_status]
+style = 'bold red'
+
+ahead = '⇡${count} '
+diverged = '⇕⇡${ahead_count}⇣${behind_count} '
+behind = '⇣${count} '
+
+untracked = '!${count} '
+modified = '!${count} ' 
+staged = '[+${count}](fg:#c3e88d) '
+
+format = '[$all_status$ahead_behind]($style)'
+
