@@ -115,8 +115,7 @@ source <(fzf --zsh)
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
-export PATH=${PATH}:`go env GOPATH`/bin
-
+export PATH=$PATH:/usr/local/go/bin
 
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
