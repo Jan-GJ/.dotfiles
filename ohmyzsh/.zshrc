@@ -115,8 +115,8 @@ source <(fzf --zsh)
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
+export PATH=$PATH:/usr/local/go/bin
 export PATH=${PATH}:`go env GOPATH`/bin
-
 
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
@@ -125,6 +125,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # Aliases
 alias vi="nvim"
