@@ -1,8 +1,8 @@
 return {
-	"ellisonleao/gruvbox.nvim",
+	"Shatur/neovim-ayu",
 	priority = 1000,
 	config = function()
-		vim.cmd([[colorscheme gruvbox]])
+		vim.cmd([[colorscheme ayu]])
 	end,
 	opts = {},
 }

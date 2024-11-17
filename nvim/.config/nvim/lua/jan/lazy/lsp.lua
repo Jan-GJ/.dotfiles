@@ -1,5 +1,4 @@
 return {
-	event = "BufReadPost",
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		"williamboman/mason.nvim",
@@ -27,36 +26,70 @@ return {
 		)
 
 		require("fidget").setup({})
-		require("mason").setup()
+		require("mason").setup({
+			ui = {
+				border = "single",
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		})
 		require("mason-lspconfig").setup({
 			ensure_installed = {
-				"tsserver",
 				"lua_ls",
 				"rust_analyzer",
 				"gopls",
 				"clangd",
 			},
-			handlers = {
-				function(server_name) -- default handler (optional)
-					require("lspconfig")[server_name].setup({
-						capabilities = capabilities,
-					})
-				end,
+		})
 
-				["lua_ls"] = function()
-					local lspconfig = require("lspconfig")
-					lspconfig.lua_ls.setup({
-						capabilities = capabilities,
-						settings = {
-							Lua = {
-								runtime = { version = "Lua 5.1" },
-								diagnostics = {
-									globals = { "vim", "it", "describe", "before_each", "after_each" },
-								},
-							},
+		require("lspconfig").lua_ls.setup({
+			on_init = function(client)
+				if client.workspace_folders then
+					local path = client.workspace_folders[1].name
+					if vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc") then
+						return
+					end
+				end
+				print(vim.env.VIMRUNTIME)
+				client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+					runtime = {
+						-- Tell the language server which version of Lua you're using
+						-- (most likely LuaJIT in the case of Neovim)
+						version = "LuaJIT",
+					},
+					-- Make the server aware of Neovim runtime files
+					workspace = {
+						checkThirdParty = true,
+						library = {
+							vim.env.VIMRUNTIME,
+							"/home/jangj/fivem_library/library",
+							-- Depending on the usage, you might want to add additional paths here.
+							-- "${3rd}/luv/library"
+							-- "${3rd}/busted/library",
 						},
-					})
-				end,
+						-- or pull in all of 'runtimepath'. NOTE: this is a lot slower and will cause issues when working on your own configuration (see https://github.com/neovim/nvim-lspconfig/issues/3189)
+						-- library = vim.api.nvim_get_runtime_file("", true)
+					},
+				})
+			end,
+			settings = {
+				Lua = {
+					workspace = {
+						checkThirdParty = true,
+						library = {
+							vim.env.VIMRUNTIME,
+							"/home/jangj/fivem_library/library",
+							-- Depending on the usage, you might want to add additional paths here.
+							-- "${3rd}/luv/library"
+							-- "${3rd}/busted/library",
+						},
+						-- or pull in all of 'runtimepath'. NOTE: this is a lot slower and will cause issues when working on your own configuration (see https://github.com/neovim/nvim-lspconfig/issues/3189)
+						-- library = vim.api.nvim_get_runtime_file("", true)
+					},
+				},
 			},
 		})
 
@@ -110,9 +143,10 @@ return {
 				vim.keymap.set("n", "gd", function()
 					vim.lsp.buf.definition()
 				end, opts)
-				vim.keymap.set("n", "K", function()
-					vim.lsp.buf.hover()
-				end, opts)
+				-- handled by hover plugin
+				--vim.keymap.set("n", "K", function()
+				--   vim.lsp.buf.hover()
+				--  end, opts)
 				vim.keymap.set("n", "<leader>vws", function()
 					vim.lsp.buf.workspace_symbol()
 				end, opts)

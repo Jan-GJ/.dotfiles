@@ -2,12 +2,12 @@ return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
 	config = function()
-		local tokyonight = require("lualine.themes.gruvbox")
-		tokyonight.normal.c.bg = "None"
+		local myTheme = require("lualine.themes.ayu")
+		myTheme.normal.c.bg = "None"
 		require("lualine").setup({
 			options = {
 				icons_enabled = false,
-				theme = tokyonight,
+				theme = myTheme,
 				component_separators = "|",
 				section_separators = "",
 			},

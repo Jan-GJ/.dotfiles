@@ -134,6 +134,8 @@ alias vim="nvim"
 alias top="btop"
 alias htop="btop"
 
+alias lua="lua5.4"
+
 alias lse="eza -a -l --absolute --header --icons --git -s=type"
 alias ls="lse --no-user --no-permissions --no-filesize --no-time --absolute=off"
 
